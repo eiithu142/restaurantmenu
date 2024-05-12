@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="morningglory.webp" width="100px"><h2>Morning glory</h2>
+         <p>Morning glory, or water spinach, is a Thai staple usually served as stir-fry. Deep fried until golden, the morning glory still has enough ...</p>
+        </div>
+        <div class="item">
+            <img src="morninggloryshrimp.jpg" width="100px"><h2>Morning glory with shrimps</h2>
+            <p>Morning glory, or water spinach, is a Thai staple usually served as stir-fry. Deep fried until golden, the morning glory still has enough ...</p>
+
+        </div>
+        <div class="item">
+            <img src="deepmorningsauce.jpg" width="100px"><h2>Deep fried morning glory with sauce</h2>
+            <p>Smash the garlic and chilli in a pestle and mortar. · Chop the morning glory into 3cm long pieces. · Heat the oil in wok until it is nice and hot.</p>
+        </div>
+    </div>
+</body>
+<style>
+    .container{
+        background-color: orange;
+   display: grid;
+   justify-content: center;
+   gap: 30px;
+   grid-template-columns: repeat(5,185px);
+
+    
+}
+@media(max-width:1000px){
+    .container{
+        grid-template-columns: repeat(2,250px);
+    }
+}
+@media(max-width:500px){
+    .container{
+        grid-template-columns: repeat(1,250px);
+    }
+}
+img{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+}
+</style>
+</html>
